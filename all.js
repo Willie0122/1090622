@@ -1,12 +1,11 @@
-var momo= document.querySelector('#btn');
-momo.addEventListener('click',function(){
-    console.log('222');
-},false)
+var el=document.querySelector('.box');
+el.addEventListener('click',function(){
+    alert('box');
+    console.log('box')
+},true);
 
-momo.addEventListener('click',function(){
-    console.log('111');
-},false)
-
-momo.addEventListener('click',function(){
-    alert('MOW~')
-},false)
+var elbody=document.querySelector('.body');
+elbody.addEventListener('click',function(){
+    alert('body');
+    console.log('body');
+},true);
