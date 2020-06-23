@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Bubbling、Event Capturing 差異</title>
+    <title>change - 表單內容更動內容時觸發</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-    <h1>TEST~~</h1>
-    <div ></div>
-    <ul class="ulul">
-        <li><a href="#">附件1</a></li>
-        <li><a href="#">附件2</a></li>
-        <li><a href="#">附件3</a></li>
-    </ul>
+
+<body>
+    <h1 class="ulul">今日課程：change - 表單內容更動內容時觸發</h1>
+    <select  id="select">
+        <option value="八德區">八德區</option>
+        <option value="中壢區">中壢區</option>
+        <option value="內壢區">內壢區</option>
+    </select>
+    <ul class="list"></ul>
+
     <script src="all.js"></script>
 </body>
+
 </html>
