@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  blur - 離開焦點時進行事件觸發</title>
+    <title> mouse - 當滑鼠滑入指定內容時觸發</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>  blur - 離開焦點時進行事件觸發</h1>
-    <p>你的漢堡需要<input type="text" id="hamID" size=5px>個。</p>
-    <p>你的薯條需要<input type="text" id="friID" size=5px>份。</p>
-    <button type="button" class="momo">確認完畢</button>
-    <div class="nono"></div>
+<body class="body">
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: chocolate;
+        }
+    </style>
+    <div class="box">測試方塊</div>
     <script src="all.js"></script>
 </body>
 </html>
