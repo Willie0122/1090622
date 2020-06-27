@@ -1,9 +1,16 @@
-var el=document.querySelector('.body');
-el.addEventListener('mousemove',function(e){
-    console.log("screenX="+e.screenX);
-    console.log("screenY="+e.screenY);
-    console.log("pageX="+e.pageX);
-    console.log("pageY="+e.pageY);
-    console.log("clientX="+e.clientX);
-    console.log("clientY="+e.clientY);  
-},false)
+var text = document.querySelector('.NameClass');
+var Btn = document.querySelector('.TextClass');
+var display=document.querySelector('.DisplayClass');
+
+
+
+function btn() {
+    var str=text.value;
+    localStorage.setItem('KEY-1',str);
+}
+
+Btn.addEventListener('click',btn,false);
+display.addEventListener('click',function(){
+    el=localStorage.getItem('KEY-1');
+    alert('你剛輸入的是'+el+'。')
+},false);
