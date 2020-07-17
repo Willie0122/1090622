@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="all.js"></script>
 </head>
 <body>
-  <h1>第一頁</h1>
+  <h1>第二頁</h1>
   <p>點選可以移到下一頁</p>
-  <a href="B.html">往第二頁</a>
-
-<hr>
-  <p>點選可以移到上一頁</p>
-  <input type="button" class='btn2' value="往第二頁">
-  lo
+  <a href="#" class='btn'>往前一頁</a>
+  <script>
+      document.querySelector('.btn').onclick = function(){
+          window.history.back();
+      }
+  </script>
+  
 </body>
 </html>
