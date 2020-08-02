@@ -1,6 +1,5 @@
-var location1=3;
-var location2=4;
-var location3=5;
+var location1=Math.random();
+var location=Math.floor(location1);
 var guess;
 var hits=0;
 var guesses=0;
@@ -13,7 +12,7 @@ while(isSunk==false){
   }else{
     guesses=guesses+1;
   
-  if(guess==location1 ||guess==location==2 ||guess==location3){
+  if(guess==location){
     alert('擊中目標!!');
     hits=hits+1;
     if(hits==3){
