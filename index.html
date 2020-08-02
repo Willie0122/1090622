@@ -7,15 +7,20 @@
 
 </head>
 <body>
-    帳號：
-    <input type="text" class="account">
-    <br>
-    密碼：
-    <input type="passowrd" class="password" >
-    <br>
-    <input type="button" class="send" value="送出">
+   <h1>今日539幫我買以下數字：各2元 全車</h1>
 
-  <script src="all.js"></script>
+   <h2 id="demo" style="color:blue" onclick="myFunction()">點選一下藍字內容!!.</h2>
+<script>
+  
+var num1=Math.floor(Math.random()*39);
+var num2=Math.floor(Math.random()*39);
+
+
+function myFunction() {
+  document.getElementById("demo").innerHTML="「"+num1+"」"+"、"+"「"+num2+"」"+"各兩元，全碰!!"
+}
+
+</script>
 
 </body>
 </html>
