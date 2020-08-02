@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>539下注號碼(偉)</title>
 
 </head>
+
 <body>
-  <p  id="time" style="font-size: 22px;"></p>
+  <p id="time" style="font-size: 22px;"></p>
   <p style="font-size: 22px;">幫我買以下數字：</p>
 
-   <h2 id="demo" style="color:blue" onclick="myFunction()">點選一下藍字內容!!.</h2>
-<script>
-  
-var num1=Math.floor(Math.random()*38)+1;
-var num2=Math.floor(Math.random()*38)+1;
+  <h2 id="demo" style="color:blue" onclick="myFunction()">點選一下藍字內容!!.</h2>
+  <script>
 
-if(num1==num2){
-  var num1=Math.floor(Math.random()*38)+1;
-  var num2=Math.floor(Math.random()*38)+1;
-}else{
-  var Today=new Date();
-　document.getElementById('time').textContent="今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日";
+    var num1 = Math.floor(Math.random() * 38) + 1;
+    var num2 = Math.floor(Math.random() * 38) + 1;
 
-function myFunction() {
-  document.getElementById("demo").innerHTML="「"+num1+"」"+"、"+"「"+num2+"」"+"各兩元，全碰!!"
-}
-}
+    if (num1 == num2) {
+      var num1 = Math.floor(Math.random() * 38) + 1;
+      var num2 = Math.floor(Math.random() * 38) + 1;
+    } else {
+      var Today = new Date();
+      document.getElementById('time').textContent = "今天日期是 " + Today.getFullYear() + " 年 " + (Today.getMonth() + 1) + " 月 " + Today.getDate() + " 日";
 
-
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "「" + num1 + "」" + "、" + "「" + num2 + "」" + "各兩元，全碰!!"
+      }
+    }
 
 
-</script>
+
+
+  </script>
 
 </body>
+
 </html>
